@@ -1,0 +1,80 @@
+.atm-display{
+	width: 133px;
+	border-color: #F3F2EF;
+}
+
+.atm-number{
+	float: left;
+	-moz-padding-end: left;
+}
+
+body{
+	font-family: arial;
+	background-color: #F3F2EF;
+}
+
+button{
+	background-color: #C0C0C0;
+}
+
+/*.button-row{
+	dis
+}*/
+
+.cancel{
+	background-color: red;
+	margin-left: 300px;
+}
+
+.clear{
+	background-color: yellow;
+	margin-left: 300px;
+}
+
+.confirm{
+	background-color: green;
+	margin-left: 300px;
+}
+
+#container{/*login*/
+	display: inline-block;
+    padding: 50px;
+}
+
+.hidden{
+	display: none;
+}
+
+#myAccount{
+	
+}
+
+.suggestedQuantity{
+margin-right: 300px
+}
+
+#wrapper{
+	padding: 30px;
+    text-align: center;
+}
+
+/*
+Div get everything to the center
+#wrapper{
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+}*/
+
+/*span{
+	padding-right: 30px;
+	-webkit-padding-end: 25px;
+}
+
+These 2 can be used to align the button containing number 0
+at the center. Without the 3 empty buttons
+
+#zero{
+	display: inline-block;
+	float: none;
+}*/

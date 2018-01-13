@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ATM</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script
+  		src="https://code.jquery.com/jquery-3.2.1.min.js"
+  		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  		crossorigin="anonymous">		
+  	</script>
+  	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  	<script src="js/atm.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="login">
+			<h3 id="title">Insert your card number</h3>
+			<p>below in the machine to withdraw money
+			from your account</p>
+
+			<div>
+				<input id="login-card" type="text" class="atm-display" value="12345">
+				<br>
+				<input id="login-pin" type="text" class="atm-display" value="0000">
+			</div>
+
+			<div class="button-row">
+				<div>
+					<button class="atm-number">
+						<strong>1</strong>
+					</button>
+				</div>
+
+				<div>
+					<button class="atm-number">
+						<strong>2</strong>
+					</button>
+				</div>
+
+				<div>
+					<button class="atm-number">
+						<strong>3</strong>
+					</button>
+				</div>
+
+			</div>
+
+				<!-- The three buttons that every ATM must have besides numbers:
+				Clear, Cancel & Confirm -->
+
+				<div id="cancel">
+					<button class="cancel">
+						&nbsp
+						<strong>Cancel</strong>
+					</button>
+				</div>
+			
+			<div class="button-row">
+				<div>
+					<button class="atm-number">
+						<strong>4</strong>
+					</button>
+				</div>
+
+				<div>
+					<button class="atm-number">
+						<strong>5</strong>
+					</button>
+				</div>
+
+				<div>
+					<button class="atm-number">
+						<strong>6</strong>
+					</button>
+				</div>
+			</div>
+
+				<!-- The three buttons that every ATM must have besides numbers:
+				Clear, Cancel & Confirm -->
+
+				<div id="clear">
+					<button class="clear">
+						&nbsp
+						<strong>Clear</strong>
+						&nbsp&nbsp
+					</button>
+				</div>
+
+			<div class="button-row">
+				<div>
+					<button class="atm-number">
+						<strong>7</strong>
+					</button>
+				</div>
+
+				<div>
+					<button class="atm-number">
+						<strong>8</strong>
+					</button>
+				</div>
+
+				<div>
+					<button class="atm-number">
+						<strong>9</strong>
+					</button>
+				</div>
+			</div>
+
+				<!-- The three buttons that every ATM must have besides numbers:
+				Clear, Cancel & Confirm -->
+
+				<div id="confirm">
+					<button class="confirm">
+						<strong>Confirm</strong>
+					</button>
+				</div>
+
+			<div>
+				<button class="atm-number">&nbsp&nbsp</button>
+			</div>
+
+			<div>
+				<span></span>
+				<!-- This space is for the 0 to be at the middle bottom -->
+				<button class="atm-number" id="zero">
+					<strong>0</strong>
+				</button>
+			</div>
+
+			<div>
+				<button class="atm-number">&nbsp&nbsp</button>
+			</div>
+
+			<div>
+				<button class="atm-number">
+					&nbsp&nbsp&nbsp&nbsp
+					&nbsp&nbsp&nbsp&nbsp
+					&nbsp&nbsp&nbsp&nbsp
+				</button>
+			</div>
+		</div>
+
+		<div id="myAccount" class="hidden">
+			<h1>Welcome <span id="myName"></span></h1>
+			<h3>My Balance: <span id="myBalance"></span></h3>
+			<div id="actions">
+				<button id="withdraw">Withdraw</button>
+			</div>
+
+			<div id="withdraw-display" class="hidden">
+				<p>Type another quantity (100 multiples)</p>
+				<input type="text" class="withdraw-text-display" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+					<button id="withdraw-confirm">Confirm Quantity</button><br><br>
+
+					<button class="suggestedQuantity">100</button>
+
+					<!-- More Buttons 
+					<button class="confirm"><strong>Confirm</strong></button>-->
+					<br><br>
+
+					<button class="suggestedQuantity">200</button>
+
+					<!-- More Buttons 
+					<button class="clear"><strong>Clear</strong></button>-->
+					<br><br>
+
+					<button class="suggestedQuantity">300</button>
+
+					<!-- More Buttons 
+					<button class="cancel"><strong>Cancel</strong></button>-->
+					<br><br>
+
+					<button class="suggestedQuantity">500</button>
+
+					<!--<br><br>-->
+					<br><br>
+
+					<button class="suggestedQuantity">1000</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
